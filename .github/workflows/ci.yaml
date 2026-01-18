@@ -1,6 +1,6 @@
 jobs:
   build:
-    runs-on: my_runners
+    runs-on: my-runners
     steps:
       - uses: actions/checkout@v4
       - run: docker version
