@@ -1,0 +1,7 @@
+jobs:
+  build:
+    runs-on: runners-OWNER-REPO
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker version
+      - run: docker build -t test:ci .
