@@ -9,4 +9,5 @@ jobs:
     runs-on: my-runners
     steps:
       - uses: actions/checkout@v4
-      - run: docker version
+      - run: |
+          mkdir build && cd build && cmake .. && make -j16 && ctest
